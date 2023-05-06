@@ -24,9 +24,9 @@
                 </tr>
               </thead>
               <tbody>
-                <% @tasks.each do |task| %>
+                <% @tasks.each.with_index(1) do |task,index| %>
                   <tr>
-                    <th scope="row">[Here should be No.]</th>
+                    <th scope="row"><%= index %></th>
                     <td><%= task.title %></td>
                     <td><%= task.description %></td>
                     <td>
