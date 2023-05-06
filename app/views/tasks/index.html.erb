@@ -29,6 +29,7 @@
                     <th scope="row"><%= index %></th>
                     <td><%= task.title %></td>
                     <td><%= task.description %></td>
+                    <td><%= task.duedate %></td>
                     <td>
                       <%= button_to "Delete task", task, method: :delete, class: "btn btn-danger" %>
                     </td>
